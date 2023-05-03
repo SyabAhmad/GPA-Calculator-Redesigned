@@ -18,8 +18,7 @@ import java.text.DecimalFormat;
 
 public class newSystem extends AppCompatActivity {
 
-    private Button before2023GPA, findNewGPA, clearAllNew;
-    private ImageButton toAboutPage, settingPage;
+    private Button findNewGPA, clearAllNew;
     private EditText Nch1, Nch2, Nch3, Nch4, Nch5, Nch6, Nm1, Nm2, Nm3, Nm4, Nm5, Nm6;
     private TextView finalNewGPA;
     @Override
@@ -115,7 +114,6 @@ public class newSystem extends AppCompatActivity {
         double Ngpa5 = 0.0;
         double Ngpa6 = 0.0;
 
-        int totalCredits = 0;
 
         int Ncredits1 = Integer.parseInt(String.valueOf(Nch1.getText()));
         int Ncredits2 = Integer.parseInt(String.valueOf(Nch2.getText()));
@@ -123,8 +121,6 @@ public class newSystem extends AppCompatActivity {
         int Ncredits4 = Integer.parseInt(String.valueOf(Nch4.getText()));
         int Ncredits5 = Integer.parseInt(String.valueOf(Nch5.getText()));
         int Ncredits6 = Integer.parseInt(String.valueOf(Nch6.getText()));
-
-        totalCredits = Ncredits1 + Ncredits2 + Ncredits3 + Ncredits4 + Ncredits5 + Ncredits6;
 
         int Nmarks1 = Integer.parseInt(String.valueOf(Nm1.getText()));
         int Nmarks2 = Integer.parseInt(String.valueOf(Nm2.getText()));

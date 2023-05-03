@@ -17,8 +17,7 @@ import java.text.DecimalFormat;
 public class oldSystem extends AppCompatActivity {
 
 
-        private Button after2023GPA, finOldGpa, clearAllOld;
-        private ImageButton toAboutPage, settingPage;
+        private Button  finOldGpa, clearAllOld;
         private EditText ch1, ch2, ch3, ch4, ch5, ch6, m1, m2, m3, m4, m5, m6;
         private TextView finalGPAView;
 
