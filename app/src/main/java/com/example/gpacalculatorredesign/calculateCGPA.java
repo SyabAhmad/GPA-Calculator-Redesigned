@@ -2,10 +2,12 @@ package com.example.gpacalculatorredesign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +18,7 @@ public class calculateCGPA extends AppCompatActivity {
     private EditText totalgpa1, totalgpa2, totalgpa3, totalgpa4, totalgpa5, totalgpa6, totalgpa7, totalgpa8;
     private Button findCGPA, clearAll;
     private TextView viewCGPA;
+    private ImageButton backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +106,15 @@ public class calculateCGPA extends AppCompatActivity {
                 } catch (Exception e) {
                     Toast.makeText(calculateCGPA.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        backButton = (ImageButton) findViewById(R.id.backToHomePage);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                startActivity(new Intent(calculateCGPA.this, MainActivity.class));
             }
         });
 

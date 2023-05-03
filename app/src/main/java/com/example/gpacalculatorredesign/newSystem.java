@@ -21,10 +21,22 @@ public class newSystem extends AppCompatActivity {
     private Button findNewGPA, clearAllNew;
     private EditText Nch1, Nch2, Nch3, Nch4, Nch5, Nch6, Nm1, Nm2, Nm3, Nm4, Nm5, Nm6;
     private TextView finalNewGPA;
+    private ImageButton backButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_system);
+
+
+        backButton = (ImageButton) findViewById(R.id.backToHomePage);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                startActivity(new Intent(newSystem.this, MainActivity.class));
+            }
+        });
+
 
 
         findNewGPA = (Button) findViewById(R.id.findNEwGPA);
@@ -803,6 +815,8 @@ public class newSystem extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
         }
     }
+
+
 
 
 }

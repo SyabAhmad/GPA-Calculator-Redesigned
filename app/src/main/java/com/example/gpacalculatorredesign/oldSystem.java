@@ -20,11 +20,23 @@ public class oldSystem extends AppCompatActivity {
         private Button  finOldGpa, clearAllOld;
         private EditText ch1, ch2, ch3, ch4, ch5, ch6, m1, m2, m3, m4, m5, m6;
         private TextView finalGPAView;
+        private ImageButton backButton;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_old_system);
+
+
+            backButton = (ImageButton) findViewById(R.id.backToHomePage);
+            backButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    finish();
+                    startActivity(new Intent(oldSystem.this, MainActivity.class));
+                }
+            });
+
 
             finOldGpa = (Button) findViewById(R.id.findOldGPA);
             finOldGpa.setOnClickListener(new View.OnClickListener() {

@@ -12,25 +12,26 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/red1"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed"
             android:text="university of Swat GPA Calculator"
             android:textColor="@color/white"
-            android:fontFamily="sans-serif-condensed"
-            />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
+
+
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
@@ -42,32 +43,115 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:src="@drawable/uos" />
+
+            </LinearLayout>
+
+
+
             <Button
                 android:id="@+id/toOldSystem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Calculate where 4 GPA on 85"
                 android:backgroundTint="@color/red1"
-                android:textSize="18sp"
-                android:fontFamily="sans-serif-condensed"/>
+                android:layout_marginTop="60dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Calculate where 4 GPA on 85"
+                android:textSize="18sp" />
+
             <Button
                 android:id="@+id/toNewSystem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Calculate where 4 GPA on 100 new"
                 android:backgroundTint="@color/red1"
-                android:textSize="18sp"
-                android:fontFamily="sans-serif-condensed"/>
+                android:fontFamily="sans-serif-condensed"
+                android:text="Calculate where 4 GPA on 100 new"
+                android:textSize="18sp" />
+
             <Button
                 android:id="@+id/calculateCGPA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="UoS Calculate CGPA"
                 android:backgroundTint="@color/red1"
-                android:textSize="18sp"
-                android:fontFamily="sans-serif-condensed"/>
+                android:fontFamily="sans-serif-condensed"
+                android:text="UoS Calculate CGPA"
+                android:textSize="18sp" />
 
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:text="Let's stay in touch!"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp">
+
+                <ImageButton
+                    android:id="@+id/facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/facebook" />
+
+                <ImageButton
+                    android:id="@+id/reddit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/reddit" />
+
+                <ImageButton
+                    android:id="@+id/github"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/github" />
+
+                <ImageButton
+                    android:id="@+id/linkedin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/linkedin" />
+
+                <ImageButton
+                    android:id="@+id/instagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/instagram" />
+
+                <ImageButton
+                    android:id="@+id/twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/twitter" />
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -81,5 +165,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:orientation="horizontal" />
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="developer: Syab Ahmad"
+            android:textColor="@color/white"
+        />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
