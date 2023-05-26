@@ -124,7 +124,7 @@ public class oldSystem extends AppCompatActivity {
             double gpa5 = 0.0;
             double gpa6 = 0.0;
 
-            int totalCredits = 0;
+
 
             int credits1 = Integer.parseInt(String.valueOf(ch1.getText()));
             int credits2 = Integer.parseInt(String.valueOf(ch2.getText()));
@@ -132,7 +132,6 @@ public class oldSystem extends AppCompatActivity {
             int credits4 = Integer.parseInt(String.valueOf(ch4.getText()));
             int credits5 = Integer.parseInt(String.valueOf(ch5.getText()));
             int credits6 = Integer.parseInt(String.valueOf(ch6.getText()));
-            totalCredits = credits1 + credits2 + credits3 + credits4 + credits5 + credits6;
 
             int marks1 = Integer.parseInt(String.valueOf(m1.getText()));
             int marks2 = Integer.parseInt(String.valueOf(m2.getText()));
@@ -140,6 +139,7 @@ public class oldSystem extends AppCompatActivity {
             int marks4 = Integer.parseInt(String.valueOf(m4.getText()));
             int marks5 = Integer.parseInt(String.valueOf(m5.getText()));
             int marks6 = Integer.parseInt(String.valueOf(m6.getText()));
+
 
 
             ///For Mraks 1 Field
